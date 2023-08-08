@@ -1,0 +1,1 @@
+appendFile will create a file or update a file, but it's best to create the file first then append it

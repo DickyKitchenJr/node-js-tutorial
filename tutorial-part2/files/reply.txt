@@ -1,0 +1,3 @@
+writeFile creates a new file
+
+ *appendFile has updated this file*
