@@ -1,13 +1,15 @@
-const { format } = require('date-fns');
+const logEvents = require('./logEvents');
 
-// using the v4 : uuid is like saying import as, so in this case it's importing version 4 as the variable uuid
-const { v4 : uuid} = require('uuid');
+const eventEmitter = require('events');
 
+class MyEmitter extends eventEmitter {};
 
-console.log("The Current Date And Time Is:");
+// initialize object
+const myEmitter = new MyEmitter();
 
-console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss')); 
+// add a listener for the log event
+myEmitter.on('log', (msg) => logEvents(msg));
 
-console.log("Your unique id is:")
-
-console.log(uuid());
+setTimeout(() => {
+    myEmitter.emit('log', 'Log event emitted');
+}, 2000)
