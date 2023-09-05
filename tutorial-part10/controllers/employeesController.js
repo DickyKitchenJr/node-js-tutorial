@@ -1,5 +1,5 @@
 const data = {
-    employees: require('../express_mvc/model/employees.json'),
+    employees: require('../model/employees.json'),
     setEmployees: function (data) { this.employees = data }
 }
 
