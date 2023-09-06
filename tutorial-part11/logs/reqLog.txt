@@ -1,0 +1,13 @@
+20230906	10:46:06	989b7759-44a5-4197-b8a4-9a590bd40eee	POST	undefined	/register
+20230906	10:46:45	8340c346-d0fe-44c0-898e-a2d770beb24e	POST	undefined	/auth
+20230906	10:56:07	27eccd66-4b6a-4bac-91dc-362c27d6fc7e	POST	undefined	/auth
+20230906	10:56:31	5cb42546-0728-46d4-8a05-d72310f665ec	POST	undefined	/auth
+20230906	10:57:27	6553c8be-eaa1-4d38-ab1a-623edca2ca6d	GET	undefined	/employees/1
+20230906	10:57:31	688e668b-aff3-4003-b494-b8b1c9d2c6b1	GET	undefined	/employees/
+20230906	10:57:39	39e146f1-1504-4397-9423-5fb8841d3e4f	POST	undefined	/auth
+20230906	10:57:51	58feb19f-59b5-4557-8a54-760a47308396	GET	undefined	/employees/
+20230906	10:58:14	3f82f526-f2dc-4779-bc56-c40e5b72e269	GET	undefined	/employees/
+20230906	13:14:21	a7fb7b58-7630-4901-97ba-e0d00b9d974d	POST	undefined	/auth
+20230906	13:15:05	d0d0ecf4-3042-403b-90f9-ec578a0e7989	GET	undefined	/refresh
+20230906	13:15:46	ef94b9a4-f1a7-4d9a-bcb3-62dbc4087ea6	GET	undefined	/refresh
+20230906	13:15:47	3893ae0a-130e-40b3-8660-54f044af2e67	GET	undefined	/refresh
