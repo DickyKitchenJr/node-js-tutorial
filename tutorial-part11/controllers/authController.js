@@ -45,6 +45,8 @@ const handleLogin = async (req, res) => {
     );
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
+      sameSite: 'None',
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000,
     }); //using a http only cookie helps protect the refresh token; sidenote: 24*60*60*1000 = 1 day in milliseconds
     res.json({ accessToken }); //on the front end you would want the access token stored in local memory so that it is less vulnerable

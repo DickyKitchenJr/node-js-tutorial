@@ -17,7 +17,12 @@ const handleLogout = async (req, res) => {
     (person) => person.refreshToken === refreshToken
   );
   if (!foundUser) {
-    res.clearCookie("jwt", { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 });
+    res.clearCookie("jwt", {
+      httpOnly: true,
+      sameSite: "None",
+      secure: true,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
     return res.sendStatus(204);
   }
   // delete refreshToken in the db
@@ -29,7 +34,12 @@ const handleLogout = async (req, res) => {
     JSON.stringify(usersDB.users)
   );
 
-  res.clearCookie("jwt", { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 }); //secure: true - makes it so that it only serves on https (vs http)
+  res.clearCookie("jwt", {
+    httpOnly: true,
+    sameSite: "None",
+    secure: true,
+    maxAge: 24 * 60 * 60 * 1000,
+  }); //secure: true - makes it so that it only serves on https (vs http)
   res.sendStatus(204);
 };
 
